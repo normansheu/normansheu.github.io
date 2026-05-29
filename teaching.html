@@ -2,76 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Art – Norman Sheu</title>
+  <title>Teaching — Norman Sheu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <!-- Elegant Serif Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  
   <style>
+    :root {
+      --bg: #FDFDFC;
+      --text: #2D2D2D;
+      --accent: #004D40; /* Tokiwa-iro (Evergreen) */
+      --border: #EEE;
+    }
+
     body {
       margin: 0;
-      padding: 32px;
-      background: #0b0b0b;
-      color: #e6e6e6;
-      font-family: monospace;
-      line-height: 1.5;
-    }
-
-    h1, h2 {
-      font-weight: normal;
-      letter-spacing: 0.05em;
-    }
-
-    section {
-      max-width: 900px;
-      margin-bottom: 80px;
-    }
-
-    .divider {
-      border-top: 1px solid #333;
-      margin: 60px 0;
-    }
-
-    a {
-      color: #9fb8ff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    pre {
-      background: #141414;
-      padding: 16px;
-      overflow-x: auto;
-      white-space: pre-wrap;
-      line-height: 1.4;
-    }
-
-    .note {
-      color: #999;
-      font-size: 0.9em;
+      padding: 80px 20px;
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Crimson Text', serif;
+      line-height: 1.6;
+      max-width: 650px;
+      margin: 0 auto;
     }
 
     nav {
       margin-bottom: 48px;
-      font-size: 0.95em;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
     }
 
     nav a {
       margin-right: 20px;
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    nav a:hover {
+      border-bottom: 1px solid var(--accent);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: var(--accent);
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+
+    .semester-group {
+      margin-bottom: 2rem;
+    }
+
+    .semester-title {
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      padding-left: 1rem;
+      border-left: 2px solid var(--border);
     }
 
     footer {
-      font-size: 0.8em;
-      color: #777;
+      font-size: 0.8rem;
+      color: #999;
       margin-top: 100px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
     }
   </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
 <nav>
   <a href="index.html">Home</a>
   <a href="research.html">Research</a>
@@ -82,89 +104,89 @@
 <section>
   <h1>Teaching</h1>
 
-  <div class="divider"></div>
+  <h2>UC Berkeley</h2>
 
-      <h2>UC Berkeley</h2>
-      <ul class="course-list">
-          <h3>Summer 2025</h3>
-          <li class="course-item">
-              <span class="course-title">Math 104: Introduction to Analysis</span>
-          </li>
-          <li>
-              <span class="course-title">Math 113: Abstract Algebra</span>
-          </li>    
-          <h3>Spring 2025</h3>
-          <li class="course-item">
-              <span class="course-title">Math 1A: Calculus</span>
-          </li>
-          <li>
-              <span class="course-title">Math 16A: Analytic Geometry and Calculus</span>
-          </li>  
-          <h3>Fall 2024</h3>
-          <li class="course-item">
-              <span class="course-title">Math 53: Multivariable Calculus</span>
-          </li>
-          <li>
-              <span class="course-title">Math 10A: Methods of Mathematics: Calculus, Statistics, and Combinatorics</span>
-          </li>  
-          <li>
-              <span class="course-title">Math 98 (DeCal Faculty Sponsor)</span>
-          </li>
-          <h3>Summer 2024</h3>
-          <li class="course-item">
-              <span class="course-title">Math 104: Introduction to Analysis</span>
-          </li>
-          <li>
-              <span class="course-title">Math 110: Abstract Linear Algebra</span>
-          </li>  
-          <h3>Spring 2024</h3>
-          <li class="course-item">
-              <span class="course-title">Math 10B: Methods of Mathematics: Calculus, Statistics, and Combinatorics</span>
-          </li>
-          <li>
-              <span class="course-title">MPS 375: Professional Preparation: Supervised Teaching in Math and the Physical Sciences</span>
-          </li>  
-          <h3>Fall 2023</h3>
-          <li class="course-item">
-              <span class="course-title">Math 1B: Calculus</span>
-          </li>
-          <li class="course-item">
-              <span class="course-title">Math 10A: Methods of Mathematics: Calculus, Statistics, and Combinatorics</span>
-          </li>
-          <li class="course-item">
-              <span class="course-title">Math 199 (Functional Analysis Reading Course)</span>
-          </li>
-          <h3>Summer 2023</h3>
-          <li class="course-item">
-              <span class="course-title">Math 104: Introduction to Analysis</span>
-          </li>
-          <li class="course-item">
-              <span class="course-title">Math 10A: Methods of Mathematics: Calculus, Statistics, and Combinatorics</span>
-          </li>
-          <h3>Spring 2023</h3>
-          <li class="course-item">
-              <span class="course-title">Math 54: Linear Algebra and Differential Equations</span>
-          </li>
-          <li>
-              <span class="course-title">MPS 375: Professional Preparation: Supervised Teaching in Math and the Physical Sciences</span>
-          </li>  
-          <h3>Fall 2022</h3>
-          <li class="course-item">
-              <span class="course-title">Math 53: Multivariable Calculus</span>
-          </li>
-          <li>
-              <span class="course-title">Math 16B: Analytical Geometry and Calculus</span>
-          </li> 
-          <h3>Summer 2022</h3>
-          <li class="course-item">
-              <span class="course-title">Math 110: Abstract Linear Algebra</span>
-          </li>
-          <li>
-              <span class="course-title">Math 53: Multivariable Calculus</span>
-          </li>           
+  <div class="semester-group">
+    <span class="semester-title">Summer 2025</span>
+    <ul>
+      <li>Math 104: Introduction to Analysis</li>
+      <li>Math 113: Abstract Algebra</li>
+    </ul>
+  </div>
 
-      
+  <div class="semester-group">
+    <span class="semester-title">Spring 2025</span>
+    <ul>
+      <li>Math 1A: Calculus</li>
+      <li>Math 16A: Analytic Geometry and Calculus</li>
+    </ul>
+  </div>
 
+  <div class="semester-group">
+    <span class="semester-title">Fall 2024</span>
+    <ul>
+      <li>Math 53: Multivariable Calculus</li>
+      <li>Math 10A: Methods of Mathematics</li>
+      <li>Math 98: DeCal Faculty Sponsor</li>
+    </ul>
+  </div>
+
+  <div class="semester-group">
+    <span class="semester-title">Summer 2024</span>
+    <ul>
+      <li>Math 104: Introduction to Analysis</li>
+      <li>Math 110: Abstract Linear Algebra</li>
+    </ul>
+  </div>
+
+  <div class="semester-group">
+    <span class="semester-title">Spring 2024</span>
+    <ul>
+      <li>Math 10B: Methods of Mathematics</li>
+      <li>MPS 375: Supervised Teaching</li>
+    </ul>
+  </div>
+
+  <div class="semester-group">
+    <span class="semester-title">Fall 2023</span>
+    <ul>
+      <li>Math 1B: Calculus</li>
+      <li>Math 10A: Methods of Mathematics</li>
+      <li>Math 199: Functional Analysis Reading Course</li>
+    </ul>
+  </div>
+
+  <div class="semester-group">
+    <span class="semester-title">Summer 2023</span>
+    <ul>
+      <li>Math 104: Introduction to Analysis</li>
+      <li>Math 10A: Methods of Mathematics</li>
+    </ul>
+  </div>
+
+  <div class="semester-group">
+    <span class="semester-title">Spring 2023</span>
+    <ul>
+      <li>Math 54: Linear Algebra and Differential Equations</li>
+      <li>MPS 375: Supervised Teaching</li>
+    </ul>
+  </div>
+
+  <div class="semester-group">
+    <span class="semester-title">Fall 2022</span>
+    <ul>
+      <li>Math 53: Multivariable Calculus</li>
+      <li>Math 16B: Analytical Geometry and Calculus</li>
+    </ul>
+  </div>
+
+  <div class="semester-group">
+    <span class="semester-title">Summer 2022</span>
+    <ul>
+      <li>Math 110: Abstract Linear Algebra</li>
+      <li>Math 53: Multivariable Calculus</li>
+    </ul>
+  </div>
 </section>
 
 <footer>
