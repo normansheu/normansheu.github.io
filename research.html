@@ -2,76 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Research – Norman Sheu</title>
+  <title>Research — Norman Sheu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <!-- Elegant Serif Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  
   <style>
+    :root {
+      --bg: #FDFDFC;
+      --text: #2D2D2D;
+      --accent: #004D40; /* Tokiwa-iro (Evergreen) */
+      --border: #EEE;
+    }
+
     body {
       margin: 0;
-      padding: 32px;
-      background: #0b0b0b;
-      color: #e6e6e6;
-      font-family: monospace;
-      line-height: 1.5;
-    }
-
-    h1, h2 {
-      font-weight: normal;
-      letter-spacing: 0.05em;
-    }
-
-    section {
-      max-width: 900px;
-      margin-bottom: 80px;
-    }
-
-    .divider {
-      border-top: 1px solid #333;
-      margin: 60px 0;
-    }
-
-    a {
-      color: #9fb8ff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    pre {
-      background: #141414;
-      padding: 16px;
-      overflow-x: auto;
-      white-space: pre-wrap;
-      line-height: 1.4;
-    }
-
-    .note {
-      color: #999;
-      font-size: 0.9em;
+      padding: 80px 20px;
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Crimson Text', serif;
+      line-height: 1.6;
+      max-width: 650px;
+      margin: 0 auto;
     }
 
     nav {
       margin-bottom: 48px;
-      font-size: 0.95em;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
     }
 
     nav a {
       margin-right: 20px;
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    nav a:hover {
+      border-bottom: 1px solid var(--accent);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: var(--accent);
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    .divider {
+      border-top: 1px solid var(--border);
+      margin: 30px 0;
+    }
+
+    .lab-box {
+      background: #F7F7F7;
+      padding: 24px;
+      margin: 20px 0;
+    }
+
+    .paper-block {
+      margin-bottom: 40px;
+    }
+
+    .paper-title {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .links {
+      font-size: 0.9rem;
+      margin-top: 5px;
     }
 
     footer {
-      font-size: 0.8em;
-      color: #777;
+      font-size: 0.8rem;
+      color: #999;
       margin-top: 100px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
     }
   </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
 <nav>
   <a href="index.html">Home</a>
   <a href="research.html">Research</a>
@@ -81,49 +107,41 @@
 
 <section id="research">
   <h1>Research</h1>
-
-  <p>
-    This page lists my current research activity and selected publications.
-  </p>
-
+  <p>This page lists my current research activity and selected publications.</p>
+  
   <div class="divider"></div>
 
   <h2>Current Research</h2>
-
-  <pre>
-GeoDes (Geometry in Design) Lab
-
-I am leading interdiscplinary research projects at the intersection of mathematics and entomology. 
-
-Current members:
-Undergradaute Students:
-Jason Jiang
-Grant Yang
-Patrick Chang
-Samuel Li
-Graduate Students:
-Seewoo Lee
-
-Past students: 
-Fangyuan Lin
-    
-  </pre>
-
-  <div class="divider"></div>
+  <div class="lab-box">
+    <strong>GeoDes (Geometry in Design) Lab</strong><br>
+    I am leading interdisciplinary research projects at the intersection of mathematics and entomology.
+    <br><br>
+    <strong>Current members:</strong><br>
+    <em>Undergraduate:</em> Jason Jiang, Grant Yang, Patrick Chang, Samuel Li<br>
+    <em>Graduate:</em> Seewoo Lee<br>
+    <br>
+    <strong>Past students:</strong> Fangyuan Lin
+  </div>
 
   <h2>Papers</h2>
 
-<pre>
-An Analysis of Silk Density in Spider Webs
-(with GeoDes Lab and Kathryn Nagel)
-Royal Society Open Science, vol. 12 (2025)
-[ <a href=https://doi.org/10.1101/2025.01.26.634972>DOI</a> | <a href=https://royalsocietypublishing.org/doi/10.1098/rsos.250455>Journal</a> ]
+  <div class="paper-block">
+    <div class="paper-title">An Analysis of Silk Density in Spider Webs</div>
+    (with GeoDes Lab and Kathryn Nagel)<br>
+    <em>Royal Society Open Science</em>, vol. 12 (2025)<br>
+    <div class="links">
+      [ <a href="https://doi.org/10.1101/2025.01.26.634972">DOI</a> ] [ <a href="https://royalsocietypublishing.org/doi/10.1098/rsos.250455">Journal</a> ]
+    </div>
+  </div>
 
-The deformed Hermitian–Yang–Mills equation on the blowup of P^n
-(with Adam Jacob)
-Asian Journal of Mathematics, vol. 26 (2022)
-[ <a href=https://dx.doi.org/10.4310/AJM.2022.v26.n6.a4>DOI</a> | <a href=https://arxiv.org/abs/2009.00651#:~:text=We%20study%20the%20deformed%20Hermitian,of%20the%20first%20author%2C%20T.C.>arXiv</a> | <a href=https://link.intlpress.com/JDetail/1806251497107197953>Journal</a> ]
-</pre>
+  <div class="paper-block">
+    <div class="paper-title">The deformed Hermitian–Yang–Mills equation on the blowup of P^n</div>
+    (with Adam Jacob)<br>
+    <em>Asian Journal of Mathematics</em>, vol. 26 (2022)<br>
+    <div class="links">
+      [ <a href="https://dx.doi.org/10.4310/AJM.2022.v26.n6.a4">DOI</a> ] [ <a href="https://arxiv.org/abs/2009.00651">arXiv</a> ] [ <a href="https://link.intlpress.com/JDetail/1806251497107197953">Journal</a> ]
+    </div>
+  </div>
 
 </section>
 
