@@ -2,76 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Art – Norman Sheu</title>
+  <title>Art — Norman Sheu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <!-- Elegant Serif Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  
   <style>
+    :root {
+      --bg: #FDFDFC;
+      --text: #2D2D2D;
+      --accent: #004D40; /* Tokiwa-iro (Evergreen) */
+      --border: #EEE;
+    }
+
     body {
       margin: 0;
-      padding: 32px;
-      background: #0b0b0b;
-      color: #e6e6e6;
-      font-family: monospace;
-      line-height: 1.5;
-    }
-
-    h1, h2 {
-      font-weight: normal;
-      letter-spacing: 0.05em;
-    }
-
-    section {
-      max-width: 900px;
-      margin-bottom: 80px;
-    }
-
-    .divider {
-      border-top: 1px solid #333;
-      margin: 60px 0;
-    }
-
-    a {
-      color: #9fb8ff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    pre {
-      background: #141414;
-      padding: 16px;
-      overflow-x: auto;
-      white-space: pre-wrap;
-      line-height: 1.4;
-    }
-
-    .note {
-      color: #999;
-      font-size: 0.9em;
+      padding: 80px 20px;
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Crimson Text', serif;
+      line-height: 1.6;
+      max-width: 650px;
+      margin: 0 auto;
     }
 
     nav {
       margin-bottom: 48px;
-      font-size: 0.95em;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
     }
 
     nav a {
       margin-right: 20px;
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    nav a:hover {
+      border-bottom: 1px solid var(--accent);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    .divider {
+      border-top: 1px solid var(--border);
+      margin: 30px 0;
+    }
+
+    .content-box {
+      background: #F7F7F7;
+      padding: 24px;
+      font-style: italic;
+      color: #444;
+      margin: 20px 0;
+    }
+
+    .note {
+      color: #777;
+      font-size: 0.9rem;
+      margin-top: 30px;
     }
 
     footer {
-      font-size: 0.8em;
-      color: #777;
+      font-size: 0.8rem;
+      color: #999;
       margin-top: 100px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
     }
   </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
 <nav>
   <a href="index.html">Home</a>
   <a href="research.html">Research</a>
@@ -81,16 +94,13 @@
 
 <section>
   <h1>Art</h1>
-
   <div class="divider"></div>
 
-  <pre>
-This page is currently under construction. While you wait for updates, feel free to type away <a href=https://normansheu.github.io/rain/>here</a>, which is part of my installation Altar at <a href=https://tiat.place/>tiat</a>.
-
-I have been documenting my progress on Instagram <a href=https://www.instagram.com/airmailfromformosa/>here</a>. 
-  </pre>
-
-
+  <div class="content-box">
+    This page is currently under construction. While you wait for updates, feel free to type away <a href="https://normansheu.github.io/rain/">here</a>, which is part of my installation Altar at <a href="https://tiat.place/">tiat</a>.
+    <br><br>
+    I have been documenting my progress on Instagram <a href="https://www.instagram.com/airmailfromformosa/">here</a>.
+  </div>
 
   <p class="note">
     Updates will be added as projects are completed.
